@@ -13,6 +13,7 @@ header {
 
   .header__holder-left {
     display: flex;
+    align-items: center;
     gap: 1.3rem;
     padding: 0 1.3rem;
 
@@ -30,7 +31,7 @@ header {
       @extend %font-main-bold;
       font-size: 1.2rem;
       max-width: 5.5rem;
-      line-height: 1.2;
+      line-height: 1.2rem;
     }
   }
 

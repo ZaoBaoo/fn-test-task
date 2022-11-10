@@ -341,7 +341,7 @@ body, main .section-configuration .section-configuration__tabs .section-configur
   font-weight: 400;
 }
 
-main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup .section-configuration__wrapper-text .section-configuration__text_bold, main .section-configuration .section-configuration__tabs .section-configuration__tabs-nav .section-configuration__tabs-nav-btn, main .section-choice-server .section-choice-server__title, main .section-description .section-description__title, header .header__holder-right .header__information-block .header__text-wrapper .header__text, header .header__holder-left .header__title {
+main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup .section-configuration__wrapper-text .section-configuration__text_bold, main .section-configuration .section-configuration__tabs .section-configuration__tabs-nav .section-configuration__tabs-nav-btn, main .section-configuration .section-configuration__title, main .section-choice-server .section-choice-server__title, main .section-description .section-description__title, header .header__holder-right .header__information-block .header__text-wrapper .header__text, header .header__holder-left .header__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
@@ -368,6 +368,7 @@ header {
 }
 header .header__holder-left {
   display: flex;
+  align-items: center;
   gap: 1.3rem;
   padding: 0 1.3rem;
 }
@@ -382,7 +383,7 @@ header .header__holder-left .header__logo-wrapper .header__logo {
 header .header__holder-left .header__title {
   font-size: 1.2rem;
   max-width: 5.5rem;
-  line-height: 1.2;
+  line-height: 1.2rem;
 }
 header .header__holder-right {
   display: flex;
@@ -495,7 +496,7 @@ aside .aside__group-icon .aside__footer {
 main {
   height: 200vh;
   background: #e6ebef;
-  padding: 5.5rem 0 0;
+  padding: 5.5rem 0 0 6rem;
 }
 main section {
   margin: 0 0 2rem;
@@ -514,6 +515,9 @@ main .breadcrumbs .breadcrumbs__item::after {
   content: " / ";
   font-size: 1.2rem;
   color: #737e84;
+}
+main .section-description {
+  margin: 0 0 4rem;
 }
 main .section-description .section-description__title {
   font-size: 3rem;
@@ -592,6 +596,11 @@ main .section-choice-server .section-choice-server__block .section-choice-server
   background: #fff;
   transition: 0.15s ease-in-out;
 }
+main .section-configuration .section-configuration__title {
+  font-size: 2.4rem;
+  color: #22232b;
+  margin: 4.2rem 0 1.3rem;
+}
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-nav {
   display: flex;
   gap: 2rem;
@@ -611,13 +620,16 @@ main .section-configuration .section-configuration__tabs .section-configuration_
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-nav .section-configuration__tabs-nav-btn {
   font-size: 1.4rem;
   line-height: 1.2;
-  color: #000000;
+  color: #3e515b;
   padding: 1rem 0;
   border: none;
   background: transparent;
   position: relative;
   white-space: nowrap;
   cursor: pointer;
+}
+main .section-configuration .section-configuration__tabs .section-configuration__tabs-nav .section-configuration__tabs-nav-btn:last-child {
+  color: #737e84;
 }
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-nav .section-configuration__tabs-nav-btn::after {
   content: "";
@@ -648,9 +660,7 @@ main .section-configuration .section-configuration__tabs .section-configuration_
   align-items: center;
 }
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup input {
-  visibility: hidden;
-  height: 0;
-  width: 0;
+  display: none;
   color: #22232b;
 }
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup input:checked + .section-configuration__wrapper-text {
@@ -673,11 +683,6 @@ main .section-configuration .section-configuration__tabs .section-configuration_
   font-size: 1.8rem;
   line-height: 1.2;
 }
-@media (max-width: 1240px) {
-  main {
-    padding: 5.5rem 0 0 6rem;
-  }
-}
 @media (max-width: 460px) {
   main {
     padding: 5.5rem 0 0 4rem;
@@ -698,8 +703,6 @@ body {
 }
 
 .container {
-  max-width: 1120px;
-  margin: 0 auto;
   padding: 0 1rem;
 }
 @media (max-width: 1240x) {
