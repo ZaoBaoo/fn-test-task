@@ -462,8 +462,8 @@ aside {
   height: 100%;
   background: #22232b;
   position: fixed;
-  padding: 0 0 5.5rem 0;
-  top: 5.5rem;
+  padding: 5.5rem 0 0 0;
+  bottom: 0;
   left: 0;
 }
 aside .aside__group-icon {
