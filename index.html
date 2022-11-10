@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./public/css/style.css" />
     <title>Личный кабинет</title>
   </head>
@@ -12,28 +21,32 @@
     <header>
       <div class="header__holder-left">
         <div class="header__logo-wrapper">
-          <img class="header__logo" src="./public/img/header/logo.png" alt="" />
+          <a href="#"><img class="header__logo" src="./public/img/header/logo.png" alt="" /></a>
         </div>
         <div class="header__title">Личный кабинет</div>
       </div>
 
       <div class="header__holder-right">
-        <div class="header__information-block">
-          <div class="header__icon-wrapper">
-            <img class="header__icon" src="./public/img/header/person-icon.png" alt="" />
+        <a href="#">
+          <div class="header__information-block">
+            <div class="header__icon-wrapper">
+              <img class="header__icon" src="./public/img/header/person-icon.png" alt="" />
+            </div>
+            <div class="header__text-wrapper">
+              <div class="header__text">Константин П.</div>
+              <div class="header__text-sup">ID 441485</div>
+            </div>
           </div>
-          <div class="text-wrapper">
-            <div class="header__text">Константин П.</div>
-            <div class="header__text-sup">ID 441485</div>
-          </div>
-        </div>
-        <div class="header__information-block">
-          <div class="header__icon-wrapper"></div>
-          <div class="text-wrapper">
-            <div class="header__text">Финансы и счета</div>
-            <div class="header__text-sup">1 050 280 тг</div>
-          </div>
-        </div>
+        </a>
+        <a href="#"
+          ><div class="header__information-block">
+            <div class="header__icon-wrapper"></div>
+            <div class="header__text-wrapper">
+              <div class="header__text">Финансы и счета</div>
+              <div class="header__text-sup">1 050 280 тг</div>
+            </div>
+          </div></a
+        >
         <div class="header__information-block">
           <div class="header__icon-wrapper_orange"></div>
         </div>
@@ -43,34 +56,42 @@
     <!-- Aside -->
     <aside>
       <div class="aside__group-icon">
-        <div class="aside__header">
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon1.svg" alt="" />
-          </div>
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon2.svg" alt="" />
-          </div>
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon3.svg" alt="" />
-          </div>
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon4.svg" alt="" />
-          </div>
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon5.svg" alt="" />
-          </div>
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon6.svg" alt="" />
-          </div>
-        </div>
-        <div class="aside__footer">
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon7.svg" alt="" />
-          </div>
-          <div class="aside__wrapper-icon">
-            <img class="aside__icon" src="./public/img/aside/icon8.svg" alt="" />
-          </div>
-        </div>
+        <ul class="aside__header">
+          <li class="aside__wrapper-icon">
+            <a href="#">
+              <img class="aside__icon" src="./public/img/aside/icon1.svg" alt="" />
+            </a>
+          </li>
+          <li class="aside__wrapper-icon">
+            <a href="#">
+              <img class="aside__icon" src="./public/img/aside/icon2.svg" alt="" />
+            </a>
+          </li>
+          <li class="aside__wrapper-icon">
+            <a href="#"><img class="aside__icon" src="./public/img/aside/icon3.svg" alt="" /></a>
+          </li>
+          <li class="aside__wrapper-icon">
+            <a href="#"><img class="aside__icon" src="./public/img/aside/icon4.svg" alt="" /></a>
+          </li>
+          <li class="aside__wrapper-icon">
+            <a href="#">
+              <img class="aside__icon" src="./public/img/aside/icon5.svg" alt="" />
+            </a>
+          </li>
+          <li class="aside__wrapper-icon">
+            <a href="#">
+              <img class="aside__icon" src="./public/img/aside/icon6.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+        <ul class="aside__footer">
+          <li class="aside__wrapper-icon">
+            <a href="#"><img class="aside__icon" src="./public/img/aside/icon7.svg" alt="" /></a>
+          </li>
+          <li class="aside__wrapper-icon">
+            <a href="#"><img class="aside__icon" src="./public/img/aside/icon8.svg" alt="" /></a>
+          </li>
+        </ul>
       </div>
     </aside>
 
@@ -128,18 +149,9 @@
                 Мои конфигурации
               </button>
             </div>
-
+            <!-- Main / Tabs -->
             <div class="section-configuration__tabs-content">
               <ul class="section-configuration__item active" id="tab1">
-                <!-- <li class="section-configuration__setup">
-                  <div class="section-configuration__wrapper-text">
-                    <span class="section-configuration__text_bold">1 </span>
-                    <span class="section-configuration__text">CPU / </span>
-                    <span class="section-configuration__text_bold">2 GB</span>
-                    <span class="section-configuration__text">RAM</span>
-                  </div>
-                </li> -->
-
                 <li class="section-configuration__setup">
                   <input type="radio" name="config" id="1" />
                   <label for="1" class="section-configuration__wrapper-text">
@@ -157,7 +169,7 @@
                     <div>
                       <span class="section-configuration__text_bold">1 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">3 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -168,7 +180,7 @@
                     <div>
                       <span class="section-configuration__text_bold">1 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">4 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -177,9 +189,9 @@
                   <input type="radio" name="config" id="4" />
                   <label for="4" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">2 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">1 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -188,7 +200,7 @@
                   <input type="radio" name="config" id="5" />
                   <label for="5" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">2 </span>
                       <span class="section-configuration__text">CPU / </span>
                       <span class="section-configuration__text_bold">2 GB</span>
                       <span class="section-configuration__text">RAM</span>
@@ -199,9 +211,9 @@
                   <input type="radio" name="config" id="6" />
                   <label for="6" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">2 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">3 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -210,9 +222,9 @@
                   <input type="radio" name="config" id="7" />
                   <label for="7" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">2 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">4 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -221,9 +233,9 @@
                   <input type="radio" name="config" id="8" />
                   <label for="8" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">2 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">6 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -232,9 +244,9 @@
                   <input type="radio" name="config" id="9" />
                   <label for="9" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">2 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">8 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -243,9 +255,9 @@
                   <input type="radio" name="config" id="10" />
                   <label for="10" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">4 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">16 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -254,9 +266,9 @@
                   <input type="radio" name="config" id="11" />
                   <label for="11" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">4 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">24 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>
@@ -265,9 +277,9 @@
                   <input type="radio" name="config" id="12" />
                   <label for="12" class="section-configuration__wrapper-text">
                     <div>
-                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text_bold">10 </span>
                       <span class="section-configuration__text">CPU / </span>
-                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text_bold">10 GB</span>
                       <span class="section-configuration__text">RAM</span>
                     </div>
                   </label>

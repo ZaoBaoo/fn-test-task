@@ -40,6 +40,7 @@ header {
     padding: 0 3rem;
 
     .header__information-block {
+      @extend %common-hover-effect;
       display: flex;
       gap: 1rem;
 
@@ -63,11 +64,12 @@ header {
         background: #ff8d07;
       }
 
-      .text-wrapper {
+      .header__text-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        height: 3rem;
 
         .header__text {
           @extend %font-main-bold;
