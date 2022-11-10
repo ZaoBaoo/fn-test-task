@@ -1,0 +1,11 @@
+{
+  "name": "fn-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/index.scss:public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

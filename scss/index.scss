@@ -1,0 +1,27 @@
+@import "./common";
+@import "./components/header";
+@import "./components/aside";
+@import "./components/main";
+html {
+  font-size: 10px;
+
+  @media (max-width: 460px) {
+    font-size: 8px;
+  }
+}
+
+body {
+  height: 200vh;
+  @extend %font-main-regular;
+}
+
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (max-width: 1240x) {
+    margin: 0;
+    padding: 0;
+  }
+}

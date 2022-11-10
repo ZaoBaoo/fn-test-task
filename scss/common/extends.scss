@@ -1,0 +1,18 @@
+%font-main-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+%font-main-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+%common-hover-effect {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

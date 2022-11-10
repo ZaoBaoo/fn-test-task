@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Личный кабинет</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header__holder-left">
+        <div class="header__logo-wrapper">
+          <img class="header__logo" src="./public/img/header/logo.png" alt="" />
+        </div>
+        <div class="header__title">Личный кабинет</div>
+      </div>
+
+      <div class="header__holder-right">
+        <div class="header__information-block">
+          <div class="header__icon-wrapper">
+            <img class="header__icon" src="./public/img/header/person-icon.png" alt="" />
+          </div>
+          <div class="text-wrapper">
+            <div class="header__text">Константин П.</div>
+            <div class="header__text-sup">ID 441485</div>
+          </div>
+        </div>
+        <div class="header__information-block">
+          <div class="header__icon-wrapper"></div>
+          <div class="text-wrapper">
+            <div class="header__text">Финансы и счета</div>
+            <div class="header__text-sup">1 050 280 тг</div>
+          </div>
+        </div>
+        <div class="header__information-block">
+          <div class="header__icon-wrapper_orange"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Aside -->
+    <aside>
+      <div class="aside__group-icon">
+        <div class="aside__header">
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon1.svg" alt="" />
+          </div>
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon2.svg" alt="" />
+          </div>
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon3.svg" alt="" />
+          </div>
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon4.svg" alt="" />
+          </div>
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon5.svg" alt="" />
+          </div>
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon6.svg" alt="" />
+          </div>
+        </div>
+        <div class="aside__footer">
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon7.svg" alt="" />
+          </div>
+          <div class="aside__wrapper-icon">
+            <img class="aside__icon" src="./public/img/aside/icon8.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <!-- Main / Breadcrumbs -->
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="#">Кабинет</a></li>
+          <li class="breadcrumbs__item"><a href="#">Крошки облако и тп</a></li>
+        </ul>
+
+        <!-- Main / Description -->
+        <section class="section-description">
+          <h1 class="section-description__title">Создать новый сервер</h1>
+          <h3 class="section-description__title-sup">
+            Лид с кратким пояснением того, что здесь происходит. Ну или с объяснением возможностей. Лид с кратким
+            пояснением того, что здесь происходит. Ну или с объяснением возможностей.
+          </h3>
+        </section>
+
+        <!-- Main / Choice Server -->
+        <section class="section-choice-server">
+          <h2 class="section-choice-server__title">Название сервера и зона</h2>
+          <div class="section-choice-server__block">
+            <div class="section-choice-server__group-input">
+              <!--  -->
+              <div class="section-choice__wrapper-input">
+                <input class="section-choice-server__input" type="text" required="required" />
+                <label>Введите название сервера</label>
+              </div>
+              <!--  -->
+              <div class="section-choice__wrapper-input">
+                <input class="section-choice-server__input" type="text" required="required" />
+                <label>Зона</label>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Main / Configuration -->
+        <section class="section-configuration">
+          <div class="section-configuration__tabs">
+            <div class="section-configuration__tabs-nav">
+              <button class="section-configuration__tabs-nav-btn active" type="button" data-tab="#tab1">
+                Standard Line
+              </button>
+              <button class="section-configuration__tabs-nav-btn" type="button" data-tab="#tab2">CPU Line</button>
+              <button class="section-configuration__tabs-nav-btn" type="button" data-tab="#tab3">Memory Line</button>
+              <button class="section-configuration__tabs-nav-btn" type="button" data-tab="#tab4">
+                Произвольная конфигурация
+              </button>
+              <button class="section-configuration__tabs-nav-btn" type="button" data-tab="#tab5">
+                Мои конфигурации
+              </button>
+            </div>
+
+            <div class="section-configuration__tabs-content">
+              <ul class="section-configuration__item active" id="tab1">
+                <!-- <li class="section-configuration__setup">
+                  <div class="section-configuration__wrapper-text">
+                    <span class="section-configuration__text_bold">1 </span>
+                    <span class="section-configuration__text">CPU / </span>
+                    <span class="section-configuration__text_bold">2 GB</span>
+                    <span class="section-configuration__text">RAM</span>
+                  </div>
+                </li> -->
+
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="1" />
+                  <label for="1" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="2" />
+                  <label for="2" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="3" />
+                  <label for="3" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="4" />
+                  <label for="4" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="5" />
+                  <label for="5" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="6" />
+                  <label for="6" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="7" />
+                  <label for="7" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="8" />
+                  <label for="8" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="9" />
+                  <label for="9" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="10" />
+                  <label for="10" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="11" />
+                  <label for="11" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="section-configuration__setup">
+                  <input type="radio" name="config" id="12" />
+                  <label for="12" class="section-configuration__wrapper-text">
+                    <div>
+                      <span class="section-configuration__text_bold">1 </span>
+                      <span class="section-configuration__text">CPU / </span>
+                      <span class="section-configuration__text_bold">2 GB</span>
+                      <span class="section-configuration__text">RAM</span>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+
+              <div class="section-configuration__item" id="tab2">tab2</div>
+
+              <div class="section-configuration__item" id="tab3">tab3</div>
+
+              <div class="section-configuration__item" id="tab4">tab4</div>
+
+              <div class="section-configuration__item" id="tab5">tab5</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>

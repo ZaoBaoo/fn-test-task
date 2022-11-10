@@ -1,0 +1,50 @@
+aside {
+  width: 6rem;
+  height: 100%;
+  background: #22232b;
+  position: fixed;
+  padding: 0 0 5.5rem 0;
+  top: 5.5rem;
+  left: 0;
+
+  .aside__group-icon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .aside__header,
+    .aside__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+
+      .aside__wrapper-icon {
+        height: 2rem;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        .aside__icon {
+          height: 100%;
+        }
+      }
+    }
+
+    .aside__header {
+      padding: 1.5rem 0 0;
+    }
+    .aside__footer {
+      padding: 0 0 1.5rem 0;
+    }
+  }
+
+  @media (max-width: 460px) {
+    width: 4rem;
+  }
+}
