@@ -229,12 +229,14 @@ main {
                 @extend %font-main-bold;
                 font-size: 1.8rem;
                 line-height: 1.2;
+                color: $color-black-light;
               }
 
               .section-configuration__text {
                 @extend %font-main-regular;
                 font-size: 1.8rem;
                 line-height: 1.2;
+                color: $color-black-light;
               }
             }
           }

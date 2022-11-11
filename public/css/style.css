@@ -404,9 +404,9 @@ header .header__holder-right .header__information-block .header__icon-wrapper_or
 }
 header .header__holder-right .header__information-block .header__icon-wrapper .header__icon,
 header .header__holder-right .header__information-block .header__icon-wrapper_orange .header__icon {
-  object-fit: cover;
   height: 4.8rem;
   width: 100%;
+  object-fit: cover;
   object-position: -0.9rem -0.7rem;
 }
 header .header__holder-right .header__information-block .header__icon-wrapper_orange {
@@ -678,10 +678,12 @@ main .section-configuration .section-configuration__tabs .section-configuration_
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup .section-configuration__wrapper-text .section-configuration__text_bold {
   font-size: 1.8rem;
   line-height: 1.2;
+  color: #22232b;
 }
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup .section-configuration__wrapper-text .section-configuration__text {
   font-size: 1.8rem;
   line-height: 1.2;
+  color: #22232b;
 }
 @media (max-width: 460px) {
   main {
@@ -703,12 +705,11 @@ body {
 }
 
 .container {
-  padding: 0 1rem;
+  padding: 0 5rem;
 }
-@media (max-width: 1240x) {
+@media (max-width: 1240px) {
   .container {
-    margin: 0;
-    padding: 0;
+    padding: 0 1rem;
   }
 }
 
