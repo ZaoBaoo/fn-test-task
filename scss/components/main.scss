@@ -1,7 +1,6 @@
 main {
   height: 200vh;
   background: #e6ebef;
-  // padding: 5.5rem 0 0;
   padding: 5.5rem 0 0 6rem;
 
   section {
@@ -14,8 +13,8 @@ main {
 
     .breadcrumbs__item {
       display: inline;
-
       @extend %common-hover-effect;
+
       a {
         @extend %font-main-regular;
         font-size: 1.2rem;
@@ -34,12 +33,14 @@ main {
   // <!-- Main / Description -->
   .section-description {
     margin: 0 0 4rem;
+
     .section-description__title {
       @extend %font-main-bold;
       font-size: 3rem;
       color: $color-black-light;
       margin: 0 0 2rem;
     }
+
     .section-description__title-sup {
       @extend %font-main-regular;
       font-size: 2rem;
@@ -136,6 +137,7 @@ main {
       color: $color-black-light;
       margin: 4.2rem 0 1.3rem;
     }
+
     .section-configuration__tabs {
       .section-configuration__tabs-nav {
         display: flex;
@@ -208,12 +210,11 @@ main {
 
             input {
               display: none;
-
               color: $color-black-light;
 
               &:checked + .section-configuration__wrapper-text {
                 background: #20a8d8;
-                color: #ffffff;
+                color: $color-main;
               }
             }
 
@@ -224,19 +225,18 @@ main {
               width: 100%;
               height: 100%;
               cursor: pointer;
+              color: $color-black-light;
 
               .section-configuration__text_bold {
                 @extend %font-main-bold;
                 font-size: 1.8rem;
                 line-height: 1.2;
-                color: $color-black-light;
               }
 
               .section-configuration__text {
                 @extend %font-main-regular;
                 font-size: 1.8rem;
                 line-height: 1.2;
-                color: $color-black-light;
               }
             }
           }
@@ -244,10 +244,6 @@ main {
       }
     }
   }
-
-  // @media (max-width: 1240px) {
-  //   padding: 5.5rem 0 0 6rem;
-  // }
 
   @media (max-width: 460px) {
     padding: 5.5rem 0 0 4rem;

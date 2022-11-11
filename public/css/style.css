@@ -674,16 +674,15 @@ main .section-configuration .section-configuration__tabs .section-configuration_
   width: 100%;
   height: 100%;
   cursor: pointer;
+  color: #22232b;
 }
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup .section-configuration__wrapper-text .section-configuration__text_bold {
   font-size: 1.8rem;
   line-height: 1.2;
-  color: #22232b;
 }
 main .section-configuration .section-configuration__tabs .section-configuration__tabs-content .section-configuration__item.active .section-configuration__setup .section-configuration__wrapper-text .section-configuration__text {
   font-size: 1.8rem;
   line-height: 1.2;
-  color: #22232b;
 }
 @media (max-width: 460px) {
   main {
